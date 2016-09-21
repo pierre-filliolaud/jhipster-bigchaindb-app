@@ -6,8 +6,10 @@ services:
         ports:
             - "528017:28017"
             - "529017:29017"
+            - "59984:9984"
             - "58080:8080"
 
+        # 59984 port is for api
 
         # volumes:
         #     - ~/volumes/jhipster/Profile/rethink/:/data/db/
