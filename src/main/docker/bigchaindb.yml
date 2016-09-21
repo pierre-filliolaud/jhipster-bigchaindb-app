@@ -11,3 +11,7 @@ services:
         volumes:
              - ~/bigchaindb_docker:/data
         # 59984 port is for api
+        
+# To initialize bigchaindb docker image run command:
+# docker run --rm -v "$HOME/bigchaindb_docker:/data" -ti bigchaindb/bigchaindb -y configure
+
