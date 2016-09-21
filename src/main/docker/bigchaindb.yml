@@ -4,12 +4,10 @@ services:
         container_name: bigchaindb
         image: bigchaindb/bigchaindb:0.6.0
         ports:
-            - "528017:28017"
-            - "529017:29017"
+            - "28017:28017"
+            - "29017:29017"
             - "59984:9984"
             - "58080:8080"
-
+        volumes:
+             - ~/bigchaindb_docker:/data
         # 59984 port is for api
-
-        # volumes:
-        #     - ~/volumes/jhipster/Profile/rethink/:/data/db/
