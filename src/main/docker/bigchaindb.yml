@@ -1,0 +1,13 @@
+version: '1'
+services:
+    rethinkdb:
+        container_name: bigchaindb
+        image: bigchaindb:0.6.0
+        ports:
+            - "528017:28017"
+            - "529017:29017"
+            - "58080:8080"
+
+
+        # volumes:
+        #     - ~/volumes/jhipster/Profile/rethink/:/data/db/
